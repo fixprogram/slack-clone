@@ -7,7 +7,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { FC, FormEvent, useCallback, useRef } from "react";
-import { useProviders } from "../useProviders";
+import { useProviders } from "../hooks/use-providers";
 
 interface SignInCardProps {
   onSignUp: VoidFunction;
@@ -25,7 +25,7 @@ export const SignInCard: FC<SignInCardProps> = ({ onSignUp }) => {
       const email = emailRef.current?.value;
       const password = passwordRef.current?.value;
       if (email && password) {
-        handlePasswordSignIn(email, password);
+        handlePasswordSignIn({ flow: "signIn", email, password });
       }
     },
     [handlePasswordSignIn]
