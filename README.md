@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Features to implement & Fixes to make
+
+- Make architecture more FSD like with entities and features
+- Create a separate repo/service for backend and use there mongo for messages and postgres for everything else - get rid of convex eventually
+- Compare current version with real Slack and found out features you didn't implement yet
