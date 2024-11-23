@@ -40,3 +40,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - Make architecture more FSD like with entities and features
 - Create a separate repo/service for backend and use there mongo for messages and postgres for everything else - get rid of convex eventually
 - Compare current version with real Slack and found out features you didn't implement yet
+- Setup ci-cd pipelines
+- Add tests (start with backend)
